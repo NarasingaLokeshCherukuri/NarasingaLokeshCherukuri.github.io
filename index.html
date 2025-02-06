@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <header>
+    <nav id="desktop-nav">
+        <div class="logo">Narasinga Lokesh Cherukuri</div>
+        
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+    <nav id="hamburger-nav">
+        <div class="logo">Narasinga Lokesh Cherukuri</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#journey" onclick="toggleMenu()">Journey</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Lokesh's profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">
+                Hello, I'm
+            </p>
+            <h1 class="title">
+                Narasinga Lokesh Cherukuri
+            </h1>
+            <p class="section__text__p2">
+              <h1>I am a  <span id="typing-effect"></span></h1>
+            </p>
+            <br>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/LokeshCherukuri.pdf')">view cv</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <br>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/lokesh-ch'">
+                <img src="./assets/github.png" alt="My github Profile" 
+                class="icon" onclick="location.href='https://github.com/No-one9'">
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/about-pic.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>3+ years <br />Cloud and DevOps Engineer</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Masters Degree in Computer Science<br /> Bachelors Degree in Computer Science</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Experienced Cloud and DevOps Engineer with 3+ years of expertise in designing, automating, and managing cloud
+                infrastructures to improve scalability, security, and performance. Skilled in AWS, Kubernetes, Terraform, Jenkins,
+                Ansible, and CI/CD pipeline automation, I specialize in building highly available, cost-optimized, and secure cloud
+                architectures.
+              </p>
+              <p>
+
+              </p>
+              <p>
+                My goal is to help organizations leverage cloud technologies and DevOps best practices to drive business growth, 
+                minimize risk, and maximize efficiency. Currently, I am pursuing my Master’s in Computer Science, deepening my
+                expertise in cloud security and infrastructure automation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#journey'"
+        />
+    </section>
+
+    <section id="journey">
+      <div class="resume-section">
+      <h2>My Journey</h2>
+      
+      <!-- Timeline Container -->
+      <div class="timeline">
+        
+        <!-- Education -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content left">
+            <h3>Bachelor's in Computer Science</h3>
+            <p class="timeline-date">2016 - 2020</p>
+            <p class="timeline-location">GITAM University</p>
+            <p>CGPA 8.02 </p>
+          </div>
+        </div>
+    
+        <!-- Work Experience -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content right">
+            <h3>Machine Learning Intern</h3>
+            <p class="timeline-date"> May.2019 - Jul.2019</p>
+            <p class="timeline-location">Grepthor Software Solutions</p>
+            <!-- <p>Led a team of 5 developers to build scalable web applications.</p> -->
+          </div>
+        </div>
+    
+        <!-- Add more items as needed -->
+
+        <!-- Education -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content left">
+            <h3>Software Developer Intern</h3>
+            <p class="timeline-date">Dec. 2019 - Mar. 2020</p>
+            <p class="timeline-location">ValueLabs</p>
+            <!-- <p>Specialized in AI and Machine Learning. Published research on NLP.</p> -->
+          </div>
+        </div>
+    
+        <!-- Work Experience -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content right">
+            <h3>Software Engineer</h3>
+            <p class="timeline-date">Jun. 2020 - Dec. 2020</p>
+            <p class="timeline-location">ValueLabs</p>
+            <!-- <p>Led a team of 5 developers to build scalable web applications.</p> -->
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content left">
+            <h3>Cloud and DevOps Engineer</h3>
+            <p class="timeline-date">Dec. 2020 - Jul. 2023</p>
+            <p class="timeline-location">ValueLabs</p>
+            <!-- <p>Specialized in AI and Machine Learning. Published research on NLP.</p> -->
+          </div>
+        </div>
+    
+        <!-- Work Experience -->
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content right">
+            <h3>Master's in Computer Science</h3>
+            <p class="timeline-date">Aug. 203 - Present</p>
+            <p class="timeline-location">University of Central Missouri</p>
+            <p>CGPA 3.57/4.0</p>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#skills'"
+        />
+    </section>
+
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Programming Languages</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">DevOps Tools</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Jenkins</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Ansible</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Chef</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Containerization</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Docker</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Kubernetes</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frameworks/Libraries</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node.js</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Angular</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Databases</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MySQL</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MongoDB</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Developer Tools</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Git</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Linux</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Windows</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Unix</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+
+      
+
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Works</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="experience-details-contain">
+          <div class="about-contain">
+            <div class="details-contain color-contain">
+              <div class="article-contain">
+                <form id="contact-form" class="contact-form">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+  
+                 <button type="submit">Send Message</button>
+                </form>
+                <p id="status"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                alt="email icon"
+                class="icon contact-icon"/>
+                <p><a href="mailto:nlokesh.cherukuri@gmail.com">mygmail</a></p>
+            </div>
+         </div>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                alt="linkedin icon"
+                class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/lokesh-ch">Linkedin</a></p>
+            </div>
+        </div>
+      </section>
+
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#journey">Journey</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Lokesh Cherukuri. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
