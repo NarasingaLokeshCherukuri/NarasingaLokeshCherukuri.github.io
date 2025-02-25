@@ -629,6 +629,10 @@ footer nav {
   footer nav {
     display: none !important;
 }
+#profile .section__pic-container{
+  display: none;
+
+}
 
   .mobile-skill-grid {
     display: grid;
