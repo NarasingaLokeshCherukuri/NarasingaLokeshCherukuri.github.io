@@ -5,7 +5,7 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
-const roles = ["Cloud Engineer", "DevOps Engineer", "SRE"];
+const roles = ["Software Engineer","Cloud Engineer", "DevOps Engineer", "SRE"];
 const typingElement = document.getElementById('typing-effect');
 const typingDelay = 100; // Delay between typing each character
 const erasingDelay = 75; // Delay between erasing each character
