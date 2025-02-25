@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init({
+      publicKey: "En6WeXA85o-j-Vpfk", // Replace with your EmailJS public key
+    });
+  })();
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
 </head>
 <body>
   <header>
@@ -225,9 +237,44 @@
         />
     </section>
 
+
+<p class="section__text__p1">Explore My</p>
+<h1 class="title">Skills</h1>
+
+
+<skil id="skil-mob">
+  <!-- Programming -->
+  <div class="mobile-skill-grid">
+    <i class="fab fa-python "></i>
+    <i class="fab fa-js-square "></i>
+    <i class="fab fa-html5 "></i>
+    <i class="fab fa-css3-alt "></i>
+    <i class="fab fa-aws"></i>
+    <i class="fab fa-git-alt"></i>
+  <i class="fas fa-cloud"></i>
+  <i class="fab fa-docker"></i>
+  <i class="fab fa-linux"></i>
+  <i class="fas fa-terminal"></i>
+  <i class="fas fa-chart-line"></i>
+  <i class="fab fa-jenkins mobile-only"></i>
+  </div>
+  <div class="mobile-skill-grid">
+  
+  <iconify-icon icon="logos:angular-icon"></iconify-icon>
+  <iconify-icon icon="logos:nodejs"></iconify-icon>
+  <iconify-icon icon="logos:microsoft-azure"></iconify-icon>
+  <iconify-icon icon="logos:kubernetes"></iconify-icon>
+  <iconify-icon icon="logos:terraform"></iconify-icon>
+  <iconify-icon icon="logos:helm"></iconify-icon>
+  <iconify-icon icon="logos:prometheus"></iconify-icon>
+  <iconify-icon icon="logos:grafana"></iconify-icon>
+  <iconify-icon icon="logos:ansible"></iconify-icon>
+  <iconify-icon icon="logos:mongodb"></iconify-icon>
+  <iconify-icon icon="logos:mysql"></iconify-icon>
+  </div>
+  </skil>
     <section id="skills">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills</h1>
+      
         <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -439,11 +486,11 @@
           class="icon arrow"
           onclick="location.href='./#projects'"
         />
-      </section>
+  </section>
 
       
 
-<!--       <section id="projects">
+      <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Works</h1>
         <div class="experience-details-container">
@@ -496,7 +543,7 @@
                 </button>
               </div>
             </div>
-            <div class="details-container color-container">
+            <!-- <div class="details-container color-container">
               <div class="article-container">
                 <img
                   src="./assets/project-3.png"
@@ -519,15 +566,42 @@
                   Live Demo
                 </button>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
+
+        <!-- <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/project-3.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div> -->
+
+        
         <img
           src="./assets/arrow.png"
           alt="Arrow icon"
           class="icon arrow"
           onclick="location.href='./#contact'"
-        /> -->
+        />
       </section>
       <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
@@ -553,7 +627,7 @@
             </div>
           </div>
         </div>
-          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+          <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
           <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" 
@@ -573,7 +647,7 @@
       </section>
 
       <footer>
-        <nav>
+        <nav id="skil-mob">
           <div class="nav-links-container">
             <ul class="nav-links">
               <li><a href="#about">About</a></li>
@@ -584,6 +658,7 @@
             </ul>
           </div>
         </nav>
+        <a>Views:</a> <a class="counter-number"></a>
         <p>Copyright &#169; 2024 Lokesh Cherukuri. All Rights Reserved.</p>
       </footer>
     <script src="script.js"></script>
